@@ -1,0 +1,21 @@
+<h1>Todo list!</h1>
+
+
+<h2>List of your categories</h2>
+    #if($categories)
+    <h3>To manage each category, click on it's name:</h3>
+      <ul>
+        #foreach($category in $categories)
+          <li><a href="/categories/$category.getId()">$category.getName()</a></li>
+        #end
+      </ul>
+    #else
+    <p>There are no saved categories in your list yet. Add your fist category!</p>
+    #end
+
+    <h3>Add a new category:</h3>
+      <form action="/categories" method="post">
+        <label for="name">Category</label>
+        <input id="name" name="name" type="text">
+        <button type="submit" class="btn btn-primary">Add Category</button>
+      </form>

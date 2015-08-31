@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TaskTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2015-08-31T03:37:01" hostname="Nataliyas-MacBook-Pro.local" time="0.131">
+  <properties/>
+  <testcase name="equals_returnsTrueIfDescriptionsAretheSame" classname="TaskTest" time="0.01"/>
+  <testcase name="save_returnsTrueIfDescriptionsAretheSame" classname="TaskTest" time="0.029"/>
+  <testcase name="all_emptyAtFirst" classname="TaskTest" time="0.017"/>
+  <testcase name="save_assignsIdToObject" classname="TaskTest" time="0.031"/>
+  <testcase name="find_findsTaskInDatabase_true" classname="TaskTest" time="0.041"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

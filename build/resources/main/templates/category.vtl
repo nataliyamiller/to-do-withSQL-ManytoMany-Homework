@@ -1,0 +1,37 @@
+#if($tasks.size() != 0)
+<h2>Here are tasks for $category.getName() category:</h2>
+
+
+  <h5>Plase click on task to update or to delete it from $category.getName():</h5>
+  <ul>
+    #foreach($task in $tasks)
+      <li><a href="/categories/$category.getId()/tasks/$task.getId()/update">$task.getDescription()</a></li>
+    #end
+  </ul>
+#else
+  <h2>$category.getName() doesn't have any tasks yet!</h2>
+#end
+
+
+
+<h3>Add a new task to $category.getName()'s category:</h3>
+
+<form action="/categories/$category.getId()/tasks" method="post">
+  <div class="form-group">
+    <label for="description">Enter task's description</label>
+    <input id="description" name="description" type="text">
+  </div>
+  <button type="submit" class="btn btn-success">Add new task</button>
+  </form>
+
+
+
+<form action="/categories/$category.getId()/update">
+  <button type="submit" class="btn btn-info">Update category</button>
+</form>
+
+<form action="/categories/$category.getId()/delete" method="post">
+  <button type="submit" class="btn btn-success">Delete this category</button>
+</form>
+
+<a href="/">Return to Main Page</a>

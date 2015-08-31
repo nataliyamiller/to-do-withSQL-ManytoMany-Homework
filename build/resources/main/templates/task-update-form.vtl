@@ -1,0 +1,16 @@
+<h2>Update $task.getDescription():</h2>
+
+<form action="/categories/$category.getId()/tasks/$task.getId()/update" method="post">
+  <div class="form-group">
+    <label for="description">Update task's description</label>
+    <input id="description" name="description" type="text">
+  </div>
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
+
+
+<br>
+<form action="/categories/$category.getId()/tasks/$task.getId()/delete" method="post">
+  <button type="submit" class="btn btn-success">Delete this task</button>
+</form>
+<br>
