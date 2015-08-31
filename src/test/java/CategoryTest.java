@@ -56,7 +56,7 @@ public class CategoryTest {
 
       Task myTask = new Task("Mow the lawn");
       myTask.save();
-      
+
       myCategory.addTask(myTask);
       List savedTasks = myCategory.getTasks();
       assertEquals(savedTasks.size(), 1);
@@ -66,9 +66,9 @@ public class CategoryTest {
     // public void getTasks_retrievesAllTasksFromDatabase_tasksList() {
     //   Category myCategory = new Category("Household chores");
     //   myCategory.save();
-    //   Task firstTask = new Task("Mow the lawn", myCategory.getId());
+    //   Task firstTask = new Task("Mow the lawn");
     //   firstTask.save();
-    //   Task secondTask = new Task("Do the dishes", myCategory.getId());
+    //   Task secondTask = new Task("Do the dishes");
     //   secondTask.save();
     //   Task[] tasks = new Task[] {firstTask, secondTask};
     //   assertTrue(myCategory.getTasks().containsAll(Arrays.asList(tasks)));
