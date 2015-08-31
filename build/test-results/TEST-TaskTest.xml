@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TaskTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2015-08-31T03:57:11" hostname="Nataliyas-MacBook-Pro.local" time="0.237">
+<testsuite name="TaskTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-08-31T04:25:41" hostname="Nataliyas-MacBook-Pro.local" time="0.251">
   <properties/>
-  <testcase name="equals_returnsTrueIfDescriptionsAretheSame" classname="TaskTest" time="0.009"/>
-  <testcase name="save_returnsTrueIfDescriptionsAretheSame" classname="TaskTest" time="0.032"/>
-  <testcase name="addCategory_addsCategoryToTask" classname="TaskTest" time="0.052"/>
-  <testcase name="all_emptyAtFirst" classname="TaskTest" time="0.023"/>
-  <testcase name="getCategories_returnsAllCategories_ArrayList" classname="TaskTest" time="0.062"/>
-  <testcase name="save_assignsIdToObject" classname="TaskTest" time="0.028"/>
-  <testcase name="find_findsTaskInDatabase_true" classname="TaskTest" time="0.029"/>
+  <testcase name="equals_returnsTrueIfDescriptionsAretheSame" classname="TaskTest" time="0.008"/>
+  <testcase name="save_returnsTrueIfDescriptionsAretheSame" classname="TaskTest" time="0.027"/>
+  <testcase name="addCategory_addsCategoryToTask" classname="TaskTest" time="0.045"/>
+  <testcase name="delete_deletesAllTasksAndListsAssociations" classname="TaskTest" time="0.052"/>
+  <testcase name="all_emptyAtFirst" classname="TaskTest" time="0.017"/>
+  <testcase name="getCategories_returnsAllCategories_ArrayList" classname="TaskTest" time="0.046"/>
+  <testcase name="save_assignsIdToObject" classname="TaskTest" time="0.027"/>
+  <testcase name="find_findsTaskInDatabase_true" classname="TaskTest" time="0.027"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

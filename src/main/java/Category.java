@@ -87,10 +87,15 @@ public class Category {
 
   public void delete() {
     try(Connection con = DB.sql2o.open()) {
-      String sql = "DELETE FROM categories WHERE id = :id;";
-      con.createQuery(sql)
+      String deleteQuery = "DELETE FROM categories WHERE id = :id;";
+      con.createQuery(deleteQuery)
         .addParameter("id", id)
         .executeUpdate();
+
+      String joinDeleteQuery = "DELETE FROM categories_tasks WHERE category_id = :categoryId";
+        con.createQuery(joinDeleteQuery)
+          .addParameter("categoryId", this.getId())
+          .executeUpdate();
     }
   }
 
